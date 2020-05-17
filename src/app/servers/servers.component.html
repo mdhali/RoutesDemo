@@ -1,0 +1,5 @@
+<ul>
+<li *ngFor="let serv of servers">
+    <label><a [routerLink]="['/servers','server',serv.id,serv.name]">{{serv.id}}</a> - {{serv.name}}</label>
+</li>
+</ul>
